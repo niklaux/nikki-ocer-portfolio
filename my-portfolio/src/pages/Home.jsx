@@ -4,7 +4,7 @@ import HomeSection from "../components/HomeSection/HomeSection";
 
 function Home() {
   return (
-    <div>
+    <div style={{height: "100%"}}>
       <NavigationBar />
       <HomeSection />
     </div>

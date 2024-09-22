@@ -1,34 +1,41 @@
-/* Styling for the navigation bar */
+/* NavigationBar.css */
+
+/* Make the navbar opaque */
 .navbar {
-  padding: 1rem;
-  background-color: #1B1B1B;
-  text-align: center;
-  justify-content: center;
-  border-radius: 0 0 8px 8px;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0; /* Add this line */
+  width: 100%;
+  z-index: 10;
 }
 
-/* Styling for the unordered list */
-.nav-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
+/* Change text color and spacing for the nav links */
+.navbar-nav .nav-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
 }
 
-/* Styling for each list item */
-.nav-item {
-  margin: 0 15px;
+/* On hover, change link color */
+.navbar-nav .nav-link:hover {
+  color: #007bff !important;
 }
 
-/* Styling for the anchor links */
-.nav-link {
-  text-decoration: none;
-  color: #9C9C9C;
-  font-size: 1.1rem;
-  font-weight: light;
+/* Adjust brand styling */
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
-.nav-link:hover {
-  color: #007bff;
+/* Mobile view - align nav links in the center */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
 }
