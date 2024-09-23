@@ -1,0 +1,14 @@
+.section-title-style {
+  background-color: #E5E7EB;
+  padding: 5px 10px;
+  margin: auto;
+  border-radius: 50px;
+}
+
+.section-grey-bg {
+  background-color: #F9FAFB;
+}
+
+.text-justify {
+  text-align: justify;
+}
