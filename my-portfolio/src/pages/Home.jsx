@@ -5,6 +5,7 @@ import AboutMeSection from "../components/AboutMeSection/AboutMeSection";
 import SkillsSection from "../components/SkillsSection/SkillsSection";
 import ExperienceSection from "../components/ExperienceSection/ExperienceSection";
 import ContactSection from "../components/ContactSection/ContactSection";
+import FooterSection from "../components/FooterSection/FooterSection";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <SkillsSection />
       <ExperienceSection />
       <ContactSection />
+      <FooterSection />
     </div>
   );
 }
