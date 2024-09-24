@@ -10,7 +10,7 @@ function HomeSection() {
       <div className="container px-lg-5 px-sm-0">
         <div className="row flex-column-reverse flex-lg-row justify-content-between">
           <div className="col-lg-8 col-md-12 col-sm-12 d-flex flex-column justify-content-center">
-            <h1 className="display-1 fw-bold">Hi, I'm Nikki 👋</h1>
+            <h1 className="display-4 fw-bold">Hi, I'm Nikki 👋</h1>
             <p className="text-justify">
               I'm a full stack developer with a keen eye for detail and a
               passion for creating seamless, user-friendly online experiences.
@@ -42,7 +42,7 @@ function HomeSection() {
               </a>
             </div>
           </div>
-          <div className="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-end align-items-center">
+          <div className="col-lg-3 col-md-8 col-sm-8 col-8 d-flex justify-content-end align-items-center mx-auto mx-lg-0">
             <img
               src="/images/Nikki Lionel Ocer - Grad Photoshoot.jpg"
               className="img-fluid rounded-circle my-4"

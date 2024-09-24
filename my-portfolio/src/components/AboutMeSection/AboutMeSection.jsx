@@ -8,7 +8,7 @@ function AboutMeSection() {
           <p className="section-title-style">About me</p>
         </div>
         <div className="row justify-content-between">
-          <div className="col-lg-3 d-flex flex-column justify-content-center">
+          <div className="col-lg-3 col-md-8 col-sm-8 col-8 d-flex flex-column justify-content-center mx-auto mx-lg-0">
             <img
               src="/images/GradPhoto.jpg"
               className="img-fluid rounded-5 mx-auto my-5"
@@ -26,9 +26,10 @@ function AboutMeSection() {
             </p>
             <p className="text-justify">
               Since then, I’ve continued to grow as a developer, taking on new
-              challenges and learning new technologies along the way. I am now
-              also well-versed in Next.js, Material UI, TypeScript, Django, and
-              designing small-scale databases.
+              challenges and learning new technologies along the way. Thanks to
+              my current work experience, I am now well-versed in Next.js,
+              Material UI, TypeScript, Django, and designing small-scale
+              databases.
             </p>
           </div>
         </div>
