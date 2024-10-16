@@ -10,6 +10,6 @@ export const PersonalProjectsData = [
       "images/ProjectsScreenshots/whispr2.png",
       "images/ProjectsScreenshots/whispr3.png",
     ],
-    technologies: ["React", "Node", "Express", "PostgreSQL", "Bootstrap"],
+    technologies: ["React", "React Hooks", "Node", "Express", "PostgreSQL", "Bootstrap"],
   },
 ];

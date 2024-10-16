@@ -31,7 +31,16 @@ function ProjectsSection() {
                     />
                   </div>
                   <div className="col-lg-6 col-md-12 col-sm-12 p-4">
-                    <p className="fw-medium">{project.title}</p>
+                    <p className="fw-medium">
+                      <a
+                        href={project.link} // Add the project link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-primary"
+                      >
+                        {project.title}
+                      </a>
+                    </p>
                     <p className="text-muted">{project.description}</p>
                     <div className="d-flex flex-wrap">
                       {project.technologies.map((item, techIndex) => (
@@ -49,7 +58,7 @@ function ProjectsSection() {
                         href={project.link} // Add the project link
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-muted me-3"
+                        className="link-primary me-3"
                       >
                         <LinkIcon />
                       </a>
@@ -57,7 +66,7 @@ function ProjectsSection() {
                         href={project.github} // Add the GitHub link
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-muted"
+                        className="link-primary me-3"
                       >
                         <Github />
                       </a>
