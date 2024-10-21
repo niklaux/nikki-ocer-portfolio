@@ -25,7 +25,7 @@ function HomeSection() {
                 <p className="m-0">Cagayan De Oro City, Philippines</p>
               </div>
               <div className="d-flex">
-                <a
+                {/* <a
                   href="https://www.linkedin.com/in/nikki-lionel-ocer/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -36,14 +36,14 @@ function HomeSection() {
                     style={{ opacity: 0.7 }}
                     className="me-2"
                   />
-                </a>
+                </a> */}
                 <a
                   href="https://github.com/niklaux"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-decoration-none text-reset"
+                  className="text-decoration-none link-primary"
                 >
-                  <Github size={24} style={{ opacity: 0.7 }} className="me-2" />
+                  <Github size={24}  className="me-2" /> GitHub
                 </a>
               </div>
             </div>

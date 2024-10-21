@@ -54,21 +54,22 @@ function ProjectsSection() {
                       ))}
                     </div>
                     <div className="d-flex align-items-center mt-2">
-                      <a
+                      {/* <a
                         href={project.link} // Add the project link
                         target="_blank"
                         rel="noopener noreferrer"
                         className="link-primary me-3"
                       >
                         <LinkIcon />
-                      </a>
+                      </a> */}
+                      
                       <a
                         href={project.github} // Add the GitHub link
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="link-primary me-3"
+                        className="link-primary me-3 text-decoration-none"
                       >
-                        <Github />
+                        <Github /> GitHub
                       </a>
                     </div>
                   </div>
