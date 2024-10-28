@@ -43,7 +43,7 @@ function HomeSection() {
                   rel="noopener noreferrer"
                   className="text-decoration-none link-primary"
                 >
-                  <Github size={24}  className="me-2" /> GitHub
+                  <Github size={24}  className="me-3" />GitHub
                 </a>
               </div>
             </div>
