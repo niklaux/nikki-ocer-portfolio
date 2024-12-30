@@ -10,6 +10,19 @@ export const PersonalProjectsData = [
       "images/ProjectsScreenshots/whispr2.png",
       "images/ProjectsScreenshots/whispr3.png",
     ],
-    technologies: ["React", "React Hooks", "Node", "Express", "PostgreSQL", "Bootstrap"],
+    technologies: ["ReactJS", "React Hooks", "NodeJS", "ExpressJS", "PostgreSQL", "Bootstrap"],
+  },
+  {
+    title: "Furniro",
+    description:
+      "Shop the Latest Fashion Items and Stay ahead of the style game",
+    link: "https://furniro-ebon-six.vercel.app/",
+    github: "https://github.com/niklaux/Furniro",
+    images: [
+      "images/ProjectsScreenshots/Furniro1.png",
+      "images/ProjectsScreenshots/Furniro2.png",
+      "images/ProjectsScreenshots/Furniro3.png",
+    ],
+    technologies: ["NextJS", "React Hooks", "NodeJS", "ExpressJS", "PostgreSQL", "Tailwind"],
   },
 ];
