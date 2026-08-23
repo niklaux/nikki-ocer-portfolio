@@ -12,7 +12,7 @@ function ContactSection() {
         setShowToast(true);
         setTimeout(() => {
           setShowToast(false);
-        }, 2000); // Hide the toast after 3 seconds
+        }, 2000);
       })
       .catch((err) => {
         console.error("Failed to copy: ", err);
@@ -28,12 +28,12 @@ function ContactSection() {
           </div>
           <div className="pt-5">
             <p className="text-center text-muted fs-5">
-              Looking for a developer to join your team? I’m excited to hear
-              from you! <br /> Feel free to reach out with any questions or
-              opportunities.
+              Looking for someone who can build automations, improve workflows,
+              or help reduce manual ops work? I'd love to hear from you.
+              <br /> Feel free to reach out with any questions or opportunities.
             </p>
 
-            <div className="d-flex justify-content-center align-items-center my-5">
+            <div className="d-flex justify-content-center align-items-center my-5 flex-wrap">
               <Mail size={32} color="#9c9c9c" />
               <p className="m-0 mx-3 fs-4 fw-medium">{email}</p>
               <button
@@ -74,7 +74,6 @@ function ContactSection() {
           </div>
         </div>
 
-        {/* Snackbar / Toast */}
         <div
           className="toast-container position-fixed bottom-0 end-0 p-3"
           style={{ zIndex: 1050 }}

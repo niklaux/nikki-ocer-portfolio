@@ -11,7 +11,8 @@ function SkillsSection() {
           </div>
           <div className="pt-5">
             <p className="text-center">
-              The skills, tools, and technologies I've worked with:
+              The tools and technologies I use to build products and
+              automations:
             </p>
 
             <div className="row">

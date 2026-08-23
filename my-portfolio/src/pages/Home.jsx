@@ -1,19 +1,19 @@
 import React from "react";
 import NavigationBar from "../components/NavigationBar/NavigationBar";
 import HomeSection from "../components/HomeSection/HomeSection";
-import AboutMeSection from "../components/AboutMeSection/AboutMeSection";
+import AutomationSection from "../components/AutomationSection/AutomationSection";
 import SkillsSection from "../components/SkillsSection/SkillsSection";
 import ExperienceSection from "../components/ExperienceSection/ExperienceSection";
+import ProjectsSection from "../components/ProjectsSection/ProjectsSection";
 import ContactSection from "../components/ContactSection/ContactSection";
 import FooterSection from "../components/FooterSection/FooterSection";
-import ProjectsSection from "../components/ProjectsSection/ProjectsSection";
 
 function Home() {
   return (
     <div style={{ height: "100%" }}>
       <NavigationBar />
       <HomeSection />
-      <AboutMeSection />
+      <AutomationSection />
       <SkillsSection />
       <ExperienceSection />
       <ProjectsSection />

@@ -1,5 +1,38 @@
 const workExperienceData = [
   {
+    company: "Doneverse",
+    logo: "/images/CompanyLogos/doneverselogo.png",
+    positions: [
+      {
+        title: "Virtual Assistant (Software QA / Digital Marketing)",
+        dates: "Nov 2025 - Aug 2026",
+        descrption: [
+          "Performed quality assurance testing on client's software applications, using Cursor and Linear (via MCP) to identify, document, and create tickets for bugs, usability issues, and functionality gaps.",
+          "Managed end-to-end social media presence using GoHighLevel (GHL) and Meta Business Suite, including content scheduling, posting, and campaign tracking across platforms.",
+          "Designed and built marketing funnels and landing pages to support client lead generation and campaign goals.",
+          "Created and designed website pages and social media content aligned with client branding and marketing objectives.",
+        ],
+      },
+    ],
+  },
+  {
+    company: "DXC Technology Philippines",
+    logo: "/images/CompanyLogos/dxc_logo.png",
+    positions: [
+      {
+        title: "Analyst II ERP Package Applications",
+        dates: "Mar 2025 - Sep 2025",
+        descrption: [
+          "Provided Level 2 support for SAP SD with a strong focus on physical distribution processes, including outbound deliveries, shipment creation, goods issue, and transportation planning.",
+          "Investigated and resolved issues related to IDoc failures, delivery blocks, and shipment document errors to ensure timely processing of outbound logistics.",
+          "Monitored and troubleshot interface flows between SAP and external systems such as TMS and WMS, coordinating with cross-functional teams for resolution.",
+          "Collaborated with global users and functional consultants to troubleshoot and resolve incidents, ensuring alignment with operational SLAs.",
+          "Performed root cause analysis and documented recurring issues to support problem management and continuous improvement efforts.",
+        ],
+      },
+    ],
+  },
+  {
     company: "CyTech International",
     logo: "/images/CompanyLogos/cytechinternational_logo.jpeg",
     positions: [

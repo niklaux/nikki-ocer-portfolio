@@ -17,15 +17,32 @@ function ExperienceSection() {
             </p>
 
             {workExperienceData.map((work, index) => {
+              const initials = work.company
+                .split(" ")
+                .map((word) => word[0])
+                .join("")
+                .slice(0, 3)
+                .toUpperCase();
+
               return (
                 <Card key={index}>
                   <div className="row p-4">
                     <div className="col-md-1 col-5 me-auto ms-md-0 ms-2 d-flex flex-column align-items-start">
-                      <img
-                        src={work.logo}
-                        alt=""
-                        className="img-fluid ms-md-0 m-2"
-                      />
+                      {work.logo ? (
+                        <img
+                          src={work.logo}
+                          alt={`${work.company} logo`}
+                          className="img-fluid ms-md-0 m-2"
+                        />
+                      ) : (
+                        <div
+                          className="d-flex align-items-center justify-content-center rounded-circle bg-dark text-white fw-semibold ms-md-0 m-2"
+                          style={{ width: "64px", height: "64px" }}
+                          aria-label={`${work.company} logo`}
+                        >
+                          {initials}
+                        </div>
+                      )}
                     </div>
                     <div className="col-md-11 col-11 mx-auto">
                       <p className="m-0 mb-3 text-muted">{work.company}</p>

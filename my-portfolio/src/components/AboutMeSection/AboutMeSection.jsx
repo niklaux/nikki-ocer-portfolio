@@ -19,19 +19,16 @@ function AboutMeSection() {
             <div className="col-lg-8 d-flex flex-column justify-content-center">
               <p className="text-justify">
                 I graduated with a Bachelor of Science in Computer Engineering
-                and have a strong passion for web development. I began learning
-                about web development during the global pandemic in my senior
-                year at university. By the time I landed my first job in 2023, I
-                had already become proficient in the MERN (MongoDB, Express,
-                ReactJS, Node) stack, which played a key role in securing the
-                position.
+                and built my early career in web development, QA, and systems
+                work. That background gave me a practical view of how teams
+                actually move work across tools, handoffs, and approvals.
               </p>
               <p className="text-justify">
-                Since then, I’ve continued to grow as a developer, taking on new
-                challenges and learning new technologies along the way. Thanks
-                to my current work experience, I am now well-versed in Next.js,
-                Material UI, TypeScript, Django, and designing small-scale
-                databases.
+                In 2026, I am intentionally leaning into automation work. I want
+                my portfolio to show how I think about workflows, not just how I
+                build interfaces. That means n8n automations, process design,
+                integrations, and clean documentation that makes systems easier
+                to trust and maintain.
               </p>
             </div>
           </div>

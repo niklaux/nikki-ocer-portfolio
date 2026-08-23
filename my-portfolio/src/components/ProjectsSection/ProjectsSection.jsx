@@ -3,7 +3,7 @@ import React from "react";
 import { PersonalProjectsData } from "./ProjectsData";
 import Card from "../common/Card";
 import ProjectCarousel from "./ProjectCarousel"; // Import the ProjectCarousel component
-import { Github, Link as LinkIcon } from "lucide-react";
+import { Github } from "lucide-react";
 
 function ProjectsSection() {
   const projects = PersonalProjectsData;
@@ -13,12 +13,12 @@ function ProjectsSection() {
       <div className="py-5">
         <div className="container px-lg-5 px-sm-0">
           <div className="d-flex">
-            <p className="section-title-style">Projects</p>
+            <p className="section-title-style">Selected Projects</p>
           </div>
           <div className="pt-5">
             <p className="text-center">
-              Some of my personal projects to showcase my skills. (will be
-              adding more soon...)
+              Some older web builds from my developer days. I keep them here as
+              proof of experience, while the newer automation work lives above.
             </p>
 
             {projects.map((project, index) => (

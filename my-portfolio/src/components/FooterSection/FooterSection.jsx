@@ -3,11 +3,11 @@ import { Copyright } from "lucide-react";
 
 function FooterSection() {
   return (
-    <div className="py-3" style={{backgroundColor: "#E5E7EB"}}>
+    <div className="py-3" style={{ backgroundColor: "#E5E7EB" }}>
       <div className="container px-lg-5 px-sm-0 d-flex justify-content-center">
         <Copyright />
         <p className="m-0 mx-1">
-          2024 | Coded by Nikki Lionel Ocer. Got this design{" "}
+          2026 | Coded by Nikki Lionel Ocer. Got this design{" "}
           <a
             href="https://www.figma.com/community/file/1262992249991763120"
             target="_blank"
@@ -16,7 +16,7 @@ function FooterSection() {
           >
             here
           </a>
-          🩵.
+          .
         </p>
       </div>
     </div>

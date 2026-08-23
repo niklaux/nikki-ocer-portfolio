@@ -44,10 +44,19 @@ function NavigationBar() {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#about-me"
-                onClick={(e) => handleScroll(e, "about-me")}
+                href="#automations"
+                onClick={(e) => handleScroll(e, "automations")}
               >
-                About Me
+                Automations
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="#experience"
+                onClick={(e) => handleScroll(e, "experience")}
+              >
+                Experience
               </a>
             </li>
             <li className="nav-item">

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 445 445" role="img" aria-label="Doneverse Outsourced Doers logo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4f24d6" />
+      <stop offset="100%" stop-color="#3b1bb1" />
+    </linearGradient>
+  </defs>
+  <circle cx="222.5" cy="222.5" r="222.5" fill="url(#bg)" />
+  <g fill="#ffffff" font-family="Arial, Helvetica, sans-serif">
+    <text x="222.5" y="165" text-anchor="middle" font-size="54" font-weight="700" letter-spacing="-1">
+      Doneverse
+    </text>
+    <rect x="113" y="193" width="219" height="4" rx="2" fill="#7ee0cf" />
+    <text x="222.5" y="286" text-anchor="middle" font-size="64" font-weight="800" letter-spacing="-2">
+      Outsourced
+    </text>
+    <text x="222.5" y="335" text-anchor="middle" font-size="64" font-weight="800" letter-spacing="-2">
+      Doers
+    </text>
+    <text x="320" y="295" font-size="18" font-weight="700">TM</text>
+    <text x="303" y="324" font-size="18" font-weight="700" text-anchor="start">
+      WORK LESS
+    </text>
+    <text x="303" y="346" font-size="18" font-weight="700" text-anchor="start">
+      ACHIEVE MORE
+    </text>
+  </g>
+</svg>
