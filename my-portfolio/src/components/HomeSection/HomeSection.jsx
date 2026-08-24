@@ -11,10 +11,13 @@ function HomeSection() {
         <div className="container px-lg-5 px-sm-0">
           <div className="row flex-column-reverse flex-lg-row justify-content-between">
             <div className="col-lg-8 col-md-12 col-sm-12 d-flex flex-column justify-content-center">
-              <p className="section-title-style d-inline-block ms-0 mb-3">
-                Automation Specialist
-              </p>
-              <h1 className="display-4 fw-bold">Hi, I'm Nikki.</h1>
+              {/* <div className="d-flex justify-content-center justify-content-lg-start">
+                <p className="section-title-style d-inline-block mb-3">
+                  Automation Specialist
+                </p>
+              </div> */}
+
+              <h1 className="display-4 fw-bold mt-3">Hi, I'm Nikki 👋</h1>
               <p className="text-justify">
                 I build automations and web systems that remove repetitive work
                 from day-to-day operations. My focus now is n8n workflows,
@@ -28,9 +31,12 @@ function HomeSection() {
               </p>
 
               <div className="mt-4 pt-4 border-top">
-                <p className="section-title-style d-inline-block mb-3">
-                  About me
-                </p>
+                <div className="d-flex justify-content-center justify-content-lg-start">
+                  <p className="section-title-style d-inline-block mb-3">
+                    About me
+                  </p>
+                </div>
+
                 <p className="text-justify">
                   I graduated with a Bachelor of Science in Computer Engineering
                   and built my early career in web development, QA, and systems
@@ -48,7 +54,7 @@ function HomeSection() {
 
               <div className="mt-5 mb-4 p-0 d-flex align-items-center">
                 <MapPin size={24} className="me-3" style={{ opacity: 0.7 }} />
-                <p className="m-0 me-4">Cagayan De Oro City, Philippines</p>
+                <p className="m-0 me-3">Cagayan De Oro City, Philippines</p>
                 <div className="d-flex flex-wrap gap-3">
                   <a
                     href="https://github.com/niklaux"

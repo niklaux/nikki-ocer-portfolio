@@ -9,7 +9,7 @@ function AboutMeSection() {
             <p className="section-title-style">About me</p>
           </div>
           <div className="row justify-content-between">
-            <div className="col-lg-3 col-md-8 col-sm-8 col-8 d-flex flex-column justify-content-center mx-auto mx-lg-0">
+            <div className="d-flex col-lg-3 col-md-8 col-sm-8 col-8 d-flex flex-column justify-content-center mx-auto mx-lg-0">
               <img
                 src="/images/GradPhoto.webp"
                 className="img-fluid rounded-5 mx-auto my-5"
