@@ -11,7 +11,7 @@ function AboutMeSection() {
           <div className="row justify-content-between">
             <div className="col-lg-3 col-md-8 col-sm-8 col-8 d-flex flex-column justify-content-center mx-auto mx-lg-0">
               <img
-                src="/images/GradPhoto.jpg"
+                src="/images/GradPhoto.webp"
                 className="img-fluid rounded-5 mx-auto my-5"
                 alt="Nikki Lionel Ocer"
               />

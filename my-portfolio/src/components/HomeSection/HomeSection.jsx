@@ -65,7 +65,7 @@ function HomeSection() {
 
             <div className="col-lg-3 col-md-8 col-sm-8 col-8 d-flex justify-content-end align-items-center mx-auto mx-lg-0">
               <img
-                src="/images/Nikki Lionel Ocer - Grad Photoshoot.jpg"
+                src="/images/Nikki-Lionel-Ocer-Grad-Photoshoot.webp"
                 className="img-fluid rounded-circle my-4"
                 alt="Nikki Lionel Ocer"
               />

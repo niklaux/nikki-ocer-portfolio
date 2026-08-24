@@ -17,7 +17,7 @@ const workExperienceData = [
   },
   {
     company: "DXC Technology Philippines",
-    logo: "/images/CompanyLogos/dxc_logo.png",
+    logo: "/images/CompanyLogos/dxc_logo.webp",
     positions: [
       {
         title: "Analyst II ERP Package Applications",
