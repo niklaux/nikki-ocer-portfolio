@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Github, MapPin } from "lucide-react";
+import { Github, MapPin } from "lucide-react";
 
 function HomeSection() {
   return (
@@ -32,11 +32,10 @@ function HomeSection() {
                   About me
                 </p>
                 <p className="text-justify">
-                  I graduated with a Bachelor of Science in Computer
-                  Engineering and built my early career in web development,
-                  QA, and systems work. That background gave me a practical
-                  view of how teams actually move work across tools, handoffs,
-                  and approvals.
+                  I graduated with a Bachelor of Science in Computer Engineering
+                  and built my early career in web development, QA, and systems
+                  work. That background gave me a practical view of how teams
+                  actually move work across tools, handoffs, and approvals.
                 </p>
                 <p className="text-justify">
                   In 2026, I am intentionally leaning into automation work. I
@@ -49,33 +48,21 @@ function HomeSection() {
 
               <div className="mt-5 mb-4 p-0 d-flex align-items-center">
                 <MapPin size={24} className="me-3" style={{ opacity: 0.7 }} />
-                <p className="m-0">Cagayan De Oro City, Philippines</p>
-              </div>
-              <div className="d-flex flex-wrap gap-3">
-                <a
-                  href="#automations"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.getElementById("automations")?.scrollIntoView({
-                      behavior: "smooth",
-                    });
-                  }}
-                  className="btn btn-dark rounded-pill px-4"
-                >
-                  View Automations
-                  <ArrowRight size={18} className="ms-2" />
-                </a>
-                <a
-                  href="https://github.com/niklaux"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline-dark rounded-pill px-4"
-                >
-                  <Github size={18} className="me-2" />
-                  GitHub
-                </a>
+                <p className="m-0 me-4">Cagayan De Oro City, Philippines</p>
+                <div className="d-flex flex-wrap gap-3">
+                  <a
+                    href="https://github.com/niklaux"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-dark rounded-pill px-4"
+                  >
+                    <Github size={18} className="me-2" />
+                    GitHub
+                  </a>
+                </div>
               </div>
             </div>
+
             <div className="col-lg-3 col-md-8 col-sm-8 col-8 d-flex justify-content-end align-items-center mx-auto mx-lg-0">
               <img
                 src="/images/Nikki Lionel Ocer - Grad Photoshoot.jpg"
