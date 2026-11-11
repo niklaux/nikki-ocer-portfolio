@@ -5,7 +5,20 @@
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
+  <meta name="theme-color" content="#ffffff" />
+  <script>
+    // Apply the theme before rendering to avoid a flash of the wrong palette.
+    (function () {
+      var theme;
+      try { theme = localStorage.getItem('portfolio-theme'); } catch (error) {}
+      if (theme !== 'light' && theme !== 'dark') {
+        theme = 'light';
+      }
+      document.documentElement.setAttribute('data-bs-theme', theme);
+      document.documentElement.style.colorScheme = theme;
+      document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#111827' : '#ffffff';
+    })();
+  </script>
   <meta name="description"
     content="Welcome to Nikki Lionel Ocer's portfolio. Showcasing expertise in web development, design, and software engineering. Explore projects, skills, and contact information." />
 

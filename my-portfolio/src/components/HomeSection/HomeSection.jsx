@@ -6,7 +6,7 @@ function HomeSection() {
     <section id="home">
       <div
         className="d-flex align-items-center py-5"
-        style={{ backgroundColor: "#FFFFFF" }}
+        style={{ backgroundColor: "var(--portfolio-page)" }}
       >
         <div className="container px-lg-5 px-sm-0">
           <div className="row flex-column-reverse flex-lg-row justify-content-between">

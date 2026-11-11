@@ -1,12 +1,12 @@
 .section-title-style {
-  background-color: #E5E7EB;
+  background-color: var(--portfolio-badge);
   padding: 5px 10px;
   margin: auto;
   border-radius: 50px;
 }
 
 .section-grey-bg {
-  background-color: #F9FAFB;
+  background-color: var(--portfolio-section);
 }
 
 .text-justify {

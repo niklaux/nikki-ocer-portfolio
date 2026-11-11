@@ -1,4 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+  color-scheme: light;
+  --portfolio-page: #ffffff;
+  --portfolio-section: #f9fafb;
+  --portfolio-card: #ffffff;
+  --portfolio-badge: #e5e7eb;
+  --portfolio-text: #212529;
+  --portfolio-muted: #6c757d;
+  --portfolio-accent: #007bff;
+  --portfolio-nav: rgba(255, 255, 255, 0.8);
+  --portfolio-border: rgba(193, 193, 193, 0.25);
+}
+
+:root[data-bs-theme="dark"] {
+  color-scheme: dark;
+  --portfolio-page: #111827;
+  --portfolio-section: #161f30;
+  --portfolio-card: #202b3e;
+  --portfolio-badge: #2d3a50;
+  --portfolio-text: #e5e7eb;
+  --portfolio-muted: #b1bdcf;
+  --portfolio-accent: #86b7fe;
+  --portfolio-nav: rgba(17, 24, 39, 0.88);
+  --portfolio-border: #354258;
+  --bs-body-color: var(--portfolio-text);
+  --bs-body-bg: var(--portfolio-page);
+  --bs-secondary-color: var(--portfolio-muted);
+  --bs-border-color: var(--portfolio-border);
+  --bs-link-color: var(--portfolio-accent);
+  --bs-link-color-rgb: 134, 183, 254;
+  --bs-link-hover-color: #b6d4fe;
+  --bs-link-hover-color-rgb: 182, 212, 254;
+  --bs-primary-rgb: 134, 183, 254;
+}
+
 body {
   font-family: "Inter", sans-serif;
+  background-color: var(--portfolio-page);
+  color: var(--portfolio-text);
+}
+
+.portfolio-card {
+  background-color: var(--portfolio-card);
+}
+
+[data-bs-theme="dark"] .skill-logo svg [fill="#040506"] {
+  fill: var(--portfolio-text);
+}
+
+[data-bs-theme="dark"] .skill-logo svg[fill="#092e20"] {
+  fill: #70c6a6;
+}
+
+[data-bs-theme="dark"] .btn-outline-dark {
+  --bs-btn-color: var(--portfolio-text);
+  --bs-btn-border-color: #8290a6;
+  --bs-btn-hover-color: var(--portfolio-page);
+  --bs-btn-hover-bg: var(--portfolio-text);
+  --bs-btn-hover-border-color: var(--portfolio-text);
+  --bs-btn-active-color: var(--portfolio-page);
+  --bs-btn-active-bg: var(--portfolio-text);
+  --bs-btn-active-border-color: var(--portfolio-text);
 }

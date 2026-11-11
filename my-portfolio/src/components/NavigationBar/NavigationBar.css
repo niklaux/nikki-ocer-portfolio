@@ -2,9 +2,9 @@
 
 /* Make the navbar opaque */
 .navbar {
-  background-color: rgba(255, 255, 255, 0.397);
+  background-color: var(--portfolio-nav);
   backdrop-filter: blur(10px);
-  border-bottom: 0.5px solid rgba(193, 193, 193, 0.134);
+  border-bottom: 0.5px solid var(--portfolio-border);
   position: sticky;
   top: 0; /* Add this line */
   width: 100%;
@@ -21,13 +21,49 @@
 
 /* On hover, change link color */
 .navbar-nav .nav-link:hover {
-  color: #007bff !important;
+  color: var(--portfolio-accent);
 }
 
 /* Adjust brand styling */
 .navbar-brand {
   font-size: 1.75rem;
   font-weight: bold;
+}
+
+.navbar-actions {
+  order: 3;
+  margin-left: 1.25rem;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--portfolio-border);
+  border-radius: 50%;
+  color: var(--portfolio-text);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  color: var(--portfolio-accent);
+  background-color: var(--portfolio-badge);
+}
+
+.theme-toggle:focus-visible {
+  outline: 3px solid var(--portfolio-accent);
+  outline-offset: 3px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-actions {
+    order: 0;
+    margin-left: auto;
+  }
 }
 
 /* Mobile view - align nav links in the center */

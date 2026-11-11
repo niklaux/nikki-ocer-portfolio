@@ -1,7 +1,11 @@
 import React from "react";
+import { Moon, Sun } from "lucide-react";
+import useTheme from "../../hooks/useTheme";
 import "./NavigationBar.css";
 
 function NavigationBar() {
+  const [theme, toggleTheme] = useTheme();
+  const themeLabel = `Switch to ${theme === "dark" ? "light" : "dark"} mode`;
   const handleScroll = (e, targetId) => {
     e.preventDefault();
     const targetElement = document.getElementById(targetId);
@@ -25,6 +29,17 @@ function NavigationBar() {
         >
           {"<NLO />"}
         </a>
+        <div className="navbar-actions d-flex align-items-center gap-2">
+          <button
+            className="theme-toggle"
+            type="button"
+            onClick={toggleTheme}
+            aria-label={themeLabel}
+            aria-pressed={theme === "dark"}
+            title={themeLabel}
+          >
+            {theme === "dark" ? <Sun size={20} aria-hidden="true" /> : <Moon size={20} aria-hidden="true" />}
+          </button>
         <button
           className="navbar-toggler"
           type="button"
@@ -36,6 +51,7 @@ function NavigationBar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+        </div>
         <div
           className="collapse navbar-collapse justify-content-end"
           id="navbarNav"
