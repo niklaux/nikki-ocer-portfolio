@@ -13,7 +13,7 @@ function ProjectsSection() {
       <div className="py-5">
         <div className="container px-lg-5 px-sm-0">
           <div className="d-flex">
-            <p className="section-title-style">Selected Projects</p>
+            <p className="section-title-style">Web Projects</p>
           </div>
           <div className="pt-5">
             <p className="text-center">
