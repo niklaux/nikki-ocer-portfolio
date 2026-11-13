@@ -1,5 +1,18 @@
 const workExperienceData = [
   {
+    company: "Direct Client (Independent)",
+    positions: [
+      {
+        title: "Independent Virtual Assistant (Software QA / Digital Marketing)",
+        dates: "Sep 2026 - Nov 2026",
+        descrption: [
+          "Invited by the client to continue providing software QA and digital marketing support independently after they concluded their contract with Doneverse.",
+          "Tested software applications, documented bugs and usability issues in Linear, and supported website, funnel, social media, and campaign initiatives.",
+        ],
+      },
+    ],
+  },
+  {
     company: "Doneverse",
     logo: "/images/CompanyLogos/doneverselogo.png",
     positions: [

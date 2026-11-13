@@ -1,4 +1,5 @@
 import React from "react";
+import { BriefcaseBusiness } from "lucide-react";
 import workExperienceData from "./WorkExperienceData";
 import "./ExperienceSectionStyles.css";
 import Card from "../common/Card";
@@ -17,13 +18,6 @@ function ExperienceSection() {
             </p>
 
             {workExperienceData.map((work, index) => {
-              const initials = work.company
-                .split(" ")
-                .map((word) => word[0])
-                .join("")
-                .slice(0, 3)
-                .toUpperCase();
-
               return (
                 <Card key={index}>
                   <div className="row p-4">
@@ -38,9 +32,9 @@ function ExperienceSection() {
                         <div
                           className="d-flex align-items-center justify-content-center rounded-circle bg-dark text-white fw-semibold ms-md-0 m-2"
                           style={{ width: "64px", height: "64px" }}
-                          aria-label={`${work.company} logo`}
+                          aria-label={`${work.company} icon`}
                         >
-                          {initials}
+                          <BriefcaseBusiness size={28} aria-hidden="true" />
                         </div>
                       )}
                     </div>

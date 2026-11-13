@@ -2,6 +2,14 @@
   margin-inline: calc(var(--bs-gutter-x) * -0.5);
 }
 
+.automation-title {
+  color: var(--portfolio-text);
+  font-size: clamp(1.35rem, 2vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center;
+}
+
 .automation-image {
   aspect-ratio: 1702 / 718;
   object-fit: contain;

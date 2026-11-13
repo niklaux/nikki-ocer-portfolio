@@ -5,7 +5,7 @@ import "./AutomationSection.css";
 
 function WorkflowCarousel({ images, carouselId }) {
   return (
-    <div id={carouselId} className="carousel slide px-4 pt-4" data-bs-ride="false">
+    <div id={carouselId} className="carousel slide px-4 pt-3" data-bs-ride="false">
       <div className="carousel-inner rounded-4 border shadow-sm">
         {images.map((image, index) => (
           <div className={`carousel-item ${index === 0 ? "active" : ""}`} key={image.src}>
@@ -47,12 +47,12 @@ function AutomationSection() {
 
             {automationData.map((automation, index) => (
               <Card key={automation.title}>
+                <h3 className="automation-title px-4 pt-4 mb-0">{automation.title}</h3>
                 <div className="automation-media">
                   <WorkflowCarousel images={automation.images} carouselId={`automation-carousel-${index}`} />
                 </div>
                 <div className="row p-4">
                   <div className="col-lg-6 pe-lg-4">
-                    <p className="fw-medium mb-2">{automation.title}</p>
                     <p className="text-muted mb-lg-0">{automation.description}</p>
                   </div>
                   <div className="col-lg-6">
