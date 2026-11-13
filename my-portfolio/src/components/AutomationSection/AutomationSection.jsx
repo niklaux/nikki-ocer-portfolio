@@ -5,7 +5,7 @@ import "./AutomationSection.css";
 
 function WorkflowCarousel({ images, carouselId }) {
   return (
-    <div id={carouselId} className="carousel slide p-4" data-bs-ride="false">
+    <div id={carouselId} className="carousel slide px-4 pt-4" data-bs-ride="false">
       <div className="carousel-inner rounded-4 border shadow-sm">
         {images.map((image, index) => (
           <div className={`carousel-item ${index === 0 ? "active" : ""}`} key={image.src}>
