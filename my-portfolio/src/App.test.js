@@ -1,5 +1,6 @@
 import { act, fireEvent, render, screen } from '@testing-library/react';
 import NavigationBar from './components/NavigationBar/NavigationBar';
+import AutomationSection from './components/AutomationSection/AutomationSection';
 
 let media;
 
@@ -60,3 +61,32 @@ test('syncs a theme selected in another tab', () => {
   });
   expect(document.documentElement).toHaveAttribute('data-bs-theme', 'dark');
 });
+
+test('opens automation images in a modal and closes it with Escape', () => {
+  render(<AutomationSection />);
+  const trigger = screen.getByRole('button', { name: 'View Main workflow image' });
+
+  fireEvent.click(trigger);
+  expect(screen.getByRole('dialog', { name: 'Main workflow' })).toBeInTheDocument();
+  expect(document.body.style.overflow).toBe('hidden');
+
+  fireEvent.keyDown(document, { key: 'Escape' });
+  expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+  expect(document.body.style.overflow).toBe('');
+  expect(trigger).toHaveFocus();
+});
+
+test('navigates between automation images inside the modal', () => {
+  render(<AutomationSection />);
+  fireEvent.click(screen.getByRole('button', { name: 'View Main workflow image' }));
+
+  fireEvent.click(screen.getByRole('button', { name: 'View next image' }));
+  expect(screen.getByRole('dialog', { name: 'Research subworkflow' })).toBeInTheDocument();
+
+  fireEvent.keyDown(document, { key: 'ArrowRight' });
+  expect(screen.getByRole('dialog', { name: 'Main workflow' })).toBeInTheDocument();
+
+  fireEvent.keyDown(document, { key: 'ArrowLeft' });
+  expect(screen.getByRole('dialog', { name: 'Research subworkflow' })).toBeInTheDocument();
+});
+

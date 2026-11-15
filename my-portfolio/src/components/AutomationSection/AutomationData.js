@@ -45,6 +45,30 @@ const automationData = [
       },
     ],
   },
+  {
+    title: "Circuit & Co. | Store Policy Assistant",
+    liveDemo: "https://circuit-and-co-sigma.vercel.app/",
+    description:
+      "A grounded store-policy assistant for a fictional gadget shop that answers questions about returns, refunds, shipping, warranties, and product compatibility beside the full source policy.",
+    highlights: [
+      "Routes questions through a protected Next.js API endpoint to n8n, which retrieves the current policy from Google Docs and sends it to OpenAI.",
+      "Returns a structured status, answer, and quote, then verifies that every citation appears verbatim in the policy before showing the response.",
+      "Asks clarifying questions when needed, handles broad or uncovered topics, and returns a friendly HTTP 503 response when a service fails.",
+    ],
+    technologies: ["Next.js", "Vercel", "n8n", "Google Docs", "OpenAI API"],
+    images: [
+      {
+        src: "/images/AutomationScreenshots/circuit-and-co-policy-assistant.png",
+        alt: "Circuit & Co. store policy assistant displayed beside the full store policy",
+        label: "Live policy assistant",
+      },
+      {
+        src: "/images/AutomationScreenshots/circuit-and-co-n8n-workflow.png",
+        alt: "n8n workflow for the Circuit & Co. store policy assistant, including policy retrieval, OpenAI answering, citation verification, and service error branches",
+        label: "n8n policy assistant workflow",
+      },
+    ],
+  },
 ];
 
 export default automationData;
